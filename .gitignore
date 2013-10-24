@@ -1,3 +1,9 @@
+# laravel & PHP
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+Thumbs.db
 
 dist
 .tmp
