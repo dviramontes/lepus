@@ -1,11 +1,12 @@
 # THE POSTMODERN FORM GENERATOR
 
-Did I mess up grunt?
+Did I mess up grunt / yeoman?
 
     $ cd public
     $ npm install
     
 Bower is now in the right spot...
+From the top directory
     
     $ bower install
 
