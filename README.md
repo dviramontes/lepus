@@ -1,9 +1,13 @@
 # THE POSTMODERN FORM GENERATOR
 
-Did I mess up angular yeoman and bower? 
+Did I mess up grunt?
 
     $ cd public
-    $ npm install && bower install
+    $ npm install
+    
+Bower is now in the right spot...
+    
+    $ bower install
 
 Does grunt build `public/app/index.html` automatically?
 
