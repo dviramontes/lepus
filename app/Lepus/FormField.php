@@ -8,7 +8,7 @@ class FormField extends Eloquent {
 
     public function options()
     {
-        return $this->hasMany('Svsu\FormFieldOption');
+        return $this->hasMany('Lepus\FormFieldOption');
     }
 
 }

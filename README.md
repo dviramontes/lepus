@@ -14,5 +14,12 @@ Can we move `bower.json`, `Gruntfile`, and the other JS/Angular things to the ro
 Install PHP dependcies with composer:
     $ composer install
 
+Prime the Database (SQLITE):
+    $ php artisan migrate
+
+Add a default form to the database:
+    $ php artisan db:seed
+
 Start the laravel server with: 
     $ php artisan serve
+

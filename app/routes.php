@@ -11,11 +11,16 @@
 |
 */
 
-App::bind('Svsu\Interfaces\FormRepositoryInterface', 'Svsu\Repositories\DbFormRepository');
-App::bind('Svsu\Interfaces\UserRepositoryInterface', 'Svsu\Repositories\DbUserRepository');
-App::bind('Svsu\Interfaces\SubmissionRepositoryInterface', 'Svsu\Repositories\DbSubmissionRepository');
+App::bind('Lepus\Interfaces\FormRepositoryInterface', 'Lepus\Repositories\DbFormRepository');
+App::bind('Lepus\Interfaces\UserRepositoryInterface', 'Lepus\Repositories\DbUserRepository');
+App::bind('Lepus\Interfaces\SubmissionRepositoryInterface', 'Lepus\Repositories\DbSubmissionRepository');
 
 Route::get('/', function()
 {
 	return View::make('index');
+});
+
+Route::group(array('prefix' => 'service' ), function(){
+    Route::resource('forms', 'FormController');
+    Route::resource('submissions', 'SubmissionController');
 });
