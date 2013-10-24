@@ -11,6 +11,10 @@
 |
 */
 
+App::bind('Svsu\Interfaces\FormRepositoryInterface', 'Svsu\Repositories\DbFormRepository');
+App::bind('Svsu\Interfaces\UserRepositoryInterface', 'Svsu\Repositories\DbUserRepository');
+App::bind('Svsu\Interfaces\SubmissionRepositoryInterface', 'Svsu\Repositories\DbSubmissionRepository');
+
 Route::get('/', function()
 {
 	return View::make('index');
