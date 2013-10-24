@@ -1,6 +1,6 @@
 
 #HELLO FELLOW FORM BUILDERS
----
+
 
 This is a basic angular generator scaffold.
 
@@ -18,6 +18,16 @@ yeoman and grunt.js details let me show you around a bit:
 	app/
 		contains the main angular application
 		...
+
+	app/
+		views/
+			These are our templates for 
+			our single page app.
+			Pretty cool no?
+			Remember to update your $routeProvider
+			function in app.js in order for angular to
+			pick up your new templates.
+			...
 
 	app/
 		bower_components/
