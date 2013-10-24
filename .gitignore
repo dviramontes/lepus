@@ -1,0 +1,46 @@
+
+dist
+.tmp
+.sass-cache
+app/bower_components
+
+
+# Mac specifics
+.DS_Store
+._*
+.spotlight-v100
+.Trashes
+Thumbs.db
+
+# File backups and large assets
+backups-and-assets
+
+# Photoshop files
+public/img/psd/
+
+# Debugging tools
+debugging/
+
+# DreamWeaver specific
+_notes/
+
+# node_modules
+node_modules/
+
+# OS generated files 
+.swp
+
+# editors
+/iisnode
+/web.config
+
+# automatic screenshot server
+casperjs_server/screenshots
+
+# bower refs
+components/
+# and
+bower_components/
+
+# Project files
+project/
