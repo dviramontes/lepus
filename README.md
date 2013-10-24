@@ -23,3 +23,5 @@ Add a default form to the database:
 Start the laravel server with: 
     $ php artisan serve
 
+Goto the test form at: 
+    http://localhost:8000/#/forms/test/new

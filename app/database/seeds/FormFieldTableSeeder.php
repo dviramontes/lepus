@@ -11,19 +11,22 @@ class FormFieldTableSeeder extends Seeder {
         FormField::create(array(
             'name' => 'fullname',
             'title' => 'Full Name:',
-            'type' => 'text',
+            'value' => '<p>Aaron T. Maturen</p>',
+            'type' => 'contenteditable',
             'width' => '12',
             'required' => '1',
-            'form_id' => '1'
+            'form_id' => '1',
+            'id' => '1'
         ));
 
         FormField::create(array(
-            'name' => 'overEighteen',
-            'title' => 'Are you over eighteen?',
-            'type' => 'Radio',
-            'width' => '6',
+            'name' => 'moreText',
+            'title' => 'More Text!',
+            'type' => 'text',
+            'width' => '12',
             'required' => '1',
-            'form_id' => '1'
+            'form_id' => '1',
+            'id' => '2'
         ));
     }
  

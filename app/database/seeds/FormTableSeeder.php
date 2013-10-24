@@ -12,7 +12,7 @@ class FormTableSeeder extends Seeder {
             'id' => 1,
             'name' => 'test',
             'label' => 'Just A Test Form',
-            'slug_template' => 'TEST<%= id %>',
+            'slug_template' => 'TEST<%= fullname %>',
             'version' => '1'
         ));
     }

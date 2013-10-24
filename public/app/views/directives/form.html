@@ -1,0 +1,19 @@
+<h2>{{ form.label }}</h2>
+
+<!-- <div ng-show="!form.submitted"> -->
+    <form name="myForm" id="myForm">
+        <div class="row">
+            <div ng-repeat="field in form.fields">
+                <field-directive field="field">
+                {{field.name}}
+                </field-directive>
+            </div>
+        </div>
+    </form>
+
+
+    <div class="form-actions">
+        <button class="btn btn-primary pull-right" ng-click="submit()">Submit</button>
+    </div>
+    <div class="clearfix"></div>
+</div>

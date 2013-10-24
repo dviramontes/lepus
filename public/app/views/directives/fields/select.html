@@ -1,0 +1,6 @@
+<div class="form-group col-lg-{{field.width}}" >
+    <label ng-bind-html-unsafe="field.title"></label>
+    <select class="form-control" ng-options="option.key for option in field.options">
+        <!-- <option ng-repeat="option in field.options" ng-model="option.value">{{option.title}}</option> -->
+    </select>
+</div>

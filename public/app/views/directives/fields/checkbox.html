@@ -1,0 +1,9 @@
+<div class="form-group col-lg-{{field.width}}" >
+    <label ng-bind-html-unsafe="field.title"></label>
+    <div ng-repeat="option in field.options" class="checkbox">
+        <label>
+            <input type="checkbox" ng-model="option.value"  ng-required="field.required"/>
+            &nbsp;<span ng-bind="option.title"></span>
+        </label>
+    </div>
+</div>

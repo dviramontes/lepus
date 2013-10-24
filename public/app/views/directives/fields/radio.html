@@ -1,0 +1,9 @@
+<div class="form-group col-lg-{{field.width}}" >
+    <label ng-bind-html-unsafe="field.title"></label>
+    <div ng-repeat="option in field.options" class="radio">
+        <label>
+            <input type="radio" ng-value="option.key" ng-model="field.value" name="{{field.id}}" ng-required="field.required"/>
+            &nbsp;<span ng-bind-html-unsafe="option.title"></span>
+        </label>
+    </div>
+</div>

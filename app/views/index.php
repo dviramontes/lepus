@@ -27,6 +27,15 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="flash" class="alert-box alert" ng-show="flash">
+            {{ flash }}
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container" ng-view=""></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -42,6 +51,9 @@
 
     <script src="app/bower_components/jquery/jquery.js"></script>
     <script src="app/bower_components/angular/angular.js"></script>
+
+    <script src="app/scripts/vendor/ice.min.js"></script>
+    <script src="app/scripts/vendor/angular-contenteditable.js"></script>
 
         <!-- build:js scripts/plugins.js -->
         <script src="app/bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
@@ -65,9 +77,27 @@
         <script src="app/bower_components/angular-sanitize/angular-sanitize.js"></script>
         <!-- endbuild -->
 
+        <script src="app/bower_components/lodash/dist/lodash.underscore.min.js"></script>
+
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="app/scripts/app.js"></script>
         <script src="app/scripts/controllers/main.js"></script>
         <!-- endbuild -->
+
+        <script src="app/scripts/controllers/list-controller.js"></script>
+        <script src="app/scripts/controllers/view-controller.js"></script>
+        
+        <script src="app/scripts/services/form-service.js"></script>
+        <script src="app/scripts/services/ice-service.js"></script>
+        <script src="app/scripts/services/authentication-service.js"></script>
+        <script src="app/scripts/services/flash-service.js"></script>
+        <script src="app/scripts/services/session-service.js"></script>
+        
+        <script src="app/scripts/directives/form-directive.js"></script>
+        <script src="app/scripts/directives/field-directive.js"></script>
+
+        <script>
+          angular.module("lepusApp").constant("CSRF_TOKEN", '<?php echo csrf_token(); ?>');
+        </script>
 </body>
 </html>
